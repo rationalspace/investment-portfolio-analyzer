@@ -1,0 +1,22 @@
+# Enhanced Investment Portfolio Analyzer - Requirements
+# Core dependencies
+streamlit>=1.28.0
+openai>=1.0.0
+langchain>=0.0.350
+python-dotenv>=1.0.0
+
+# PDF Processing
+PyPDF2>=3.0.0
+pdfplumber>=0.9.0
+PyMuPDF>=1.23.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# AI/ML for semantic search
+sentence-transformers>=2.2.0
+faiss-cpu>=1.7.4
+
+# Utilities
+python-dateutil>=2.8.0
