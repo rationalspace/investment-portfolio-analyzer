@@ -1,2 +1,2 @@
 # investment-portfolio-analyzer
-AI-powered investment portfolio analysis too
+AI-powered investment portfolio analysis tool
