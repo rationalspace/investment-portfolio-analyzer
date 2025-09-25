@@ -321,8 +321,8 @@ def main():
         layout="wide"
     )
     
-    st.title("🏦 Advanced Investment Portfolio Analyzer")
-    st.markdown("Upload multiple investment documents and get intelligent analysis powered by AI")
+    st.title("🏦 Investment Portfolio Analyzer")
+    st.markdown("Upload portfolio documents and get AI powered analysis")
     
     # Initialize session state
     if 'documents' not in st.session_state:
@@ -410,9 +410,9 @@ def main():
         with col_btn3:
             if st.button("📈 Performance Review"):
                 query = "Review the performance of my investments including returns, benchmarks, and trends."
-        with col_btn4:
-            if st.button("🎯 Recommendations"):
-                query = "Based on my portfolio, what are your key recommendations for optimization?"
+        #with col_btn4:
+        #    if st.button("🎯 Recommendations"):
+        #        query = "Based on my portfolio, what are your key recommendations for optimization?"
         
         # Display chat history
         for message in st.session_state.messages:
