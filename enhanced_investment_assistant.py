@@ -408,7 +408,7 @@ def main():
             if st.button("⚠️ Risk Analysis"):
                 query = "Analyze the risk profile of my investments including volatility, correlation, and risk factors."
         with col_btn3:
-            if st.button("📈 Performance Review"):
+            if st.button("📈 Performance Analysis"):
                 query = "Review the performance of my investments including returns, benchmarks, and trends."
         #with col_btn4:
         #    if st.button("🎯 Recommendations"):
