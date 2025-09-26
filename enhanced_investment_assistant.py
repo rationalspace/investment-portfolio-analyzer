@@ -342,11 +342,11 @@ def main():
     
     # Sidebar for document management
     with st.sidebar:
-        st.header("📄Your documents")
+        #st.header("📄 Your documents")
         
         # File upload
         uploaded_files = st.file_uploader(
-            "",
+            "Your documents",
             type="pdf",
             accept_multiple_files=True,
             help="Upload portfolio statements, research reports, prospectuses, etc."
