@@ -316,12 +316,12 @@ class InvestmentAnalysisAgent:
 
 def main():
     st.set_page_config(
-        page_title="Investment Portfolio Analyzer",
+        page_title="InvestAssist",
         page_icon="📈",
         layout="wide"
     )
     
-    st.title("🏦 Investment Portfolio Analyzer")
+    st.title("🏦 InvestAssist")
     st.markdown("Upload portfolio documents and get AI powered analysis")
     
     # Initialize session state
@@ -342,7 +342,7 @@ def main():
     
     # Sidebar for document management
     with st.sidebar:
-        st.header("📄 Document Management")
+        st.header("📄Your documents")
         
         # File upload
         uploaded_files = st.file_uploader(
@@ -385,7 +385,7 @@ def main():
             st.write(f"• {doc['filename']}")
             st.caption(f"Processed: {doc['processed_at'].strftime('%H:%M:%S')}")
         
-        if st.button("🗑️ Clear All Documents"):
+        if st.button("🗑️ Clear All"):
             st.session_state.documents = []
             st.session_state.retriever = SmartContextRetriever()
             st.session_state.messages = []
@@ -395,8 +395,7 @@ def main():
     col1, col2 = st.columns([3, 1])
     
     with col1:
-        st.subheader("💬 Investment Analysis Chat")
-        
+        #st.subheader("💬 Investment Analysis Chat")
         # Quick analysis buttons
         st.markdown("**Quick Analysis Options:**")
         col_btn1, col_btn2, col_btn3 = st.columns(3)
