@@ -346,7 +346,7 @@ def main():
         
         # File upload
         uploaded_files = st.file_uploader(
-            "Upload Investment Documents (PDF)",
+            "",
             type="pdf",
             accept_multiple_files=True,
             help="Upload portfolio statements, research reports, prospectuses, etc."
